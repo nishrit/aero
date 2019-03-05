@@ -76,10 +76,10 @@ func Int(defaultVal int, keys ...string) int {
 	}
 }
 
-func Int2(keys ...string) int {
+func IntMust(keys ...string) int {
 	key := strings.Join(keys, ".")
 	if !Exists(key) {
-		panic("Int key missing:" + key)
+		panic("Int key missing: " + key)
 	}
 
 	return configuration.GetInt(key)
@@ -92,6 +92,14 @@ func String(defaultVal string, keys ...string) string {
 	} else {
 		return defaultVal
 	}
+}
+
+func StringMust(keys ...string) string {
+	key := strings.Join(keys, ".")
+	if !Exists(key) {
+		panic("String key missing: " + key)
+	}
+	return configuration.GetString(key)
 }
 
 func StringSlice(defaultVal []string, keys ...string) []string {
@@ -110,6 +118,15 @@ func Bool(defaultVal bool, keys ...string) bool {
 	} else {
 		return defaultVal
 	}
+}
+
+func BoolMust(keys ...string) bool {
+	key := strings.Join(keys, ".")
+	if !Exists(key) {
+		panic("Bool key missing: " + key)
+	}
+
+	return configuration.GetBool(key)
 }
 
 func Exists(keys ...string) bool {
