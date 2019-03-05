@@ -2,7 +2,7 @@ package orm
 
 import (
 	"github.com/jinzhu/gorm"
-	"github.com/nishrit/aero/cstr"
+	"github.com/nishrit/aero/db/cstr"
 )
 
 var engines map[string]*gorm.DB
