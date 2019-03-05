@@ -3,7 +3,7 @@ package my
 import (
 	"time"
 
-	"github.com/rightjoin/aero/db"
+	"github.com/nishrit/aero/db"
 )
 
 type IDKey struct {

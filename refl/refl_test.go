@@ -67,8 +67,8 @@ func TestSignature(t *testing.T) {
 	Convey("The Signature() function", t, func() {
 		Convey("Should revert st:<package-name>.<struct-name> for a struct type", func() {
 			a := Bingo{}
-			So(TypeSignature(reflect.TypeOf(a)), ShouldEqual, "st:github.com/rightjoin/aero/refl.Bingo")
-			So(TypeSignature(reflect.TypeOf(&a)), ShouldEqual, "*st:github.com/rightjoin/aero/refl.Bingo")
+			So(TypeSignature(reflect.TypeOf(a)), ShouldEqual, "st:github.com/nishrit/aero/refl.Bingo")
+			So(TypeSignature(reflect.TypeOf(&a)), ShouldEqual, "*st:github.com/nishrit/aero/refl.Bingo")
 		})
 		Convey("Then it should revert map for a map-type", func() {
 			a := make(map[string]interface{})

@@ -5,10 +5,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/rightjoin/aero/conf"
-	"github.com/rightjoin/aero/db/cstr"
-	"github.com/rightjoin/aero/engine"
-	"github.com/rightjoin/aero/key"
+	"github.com/nishrit/aero/conf"
+	"github.com/nishrit/aero/db/cstr"
+	"github.com/nishrit/aero/engine"
+	"github.com/nishrit/aero/key"
 )
 
 type Cacher interface {

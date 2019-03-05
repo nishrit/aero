@@ -5,7 +5,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/rightjoin/aero/key"
+	"github.com/nishrit/aero/key"
 	"gopkg.in/redis.v3"
 )
 

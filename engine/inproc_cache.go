@@ -4,8 +4,8 @@ import (
 	"errors"
 	"time"
 
+	"github.com/nishrit/aero/key"
 	goc "github.com/pmylund/go-cache"
-	"github.com/rightjoin/aero/key"
 )
 
 // Stores data in memory. Major use-case is for use on development machines

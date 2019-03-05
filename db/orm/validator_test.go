@@ -3,7 +3,7 @@ package orm
 import (
 	"testing"
 
-	"github.com/rightjoin/aero/db"
+	"github.com/nishrit/aero/db"
 	. "github.com/smartystreets/goconvey/convey"
 )
 

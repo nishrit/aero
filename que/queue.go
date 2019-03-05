@@ -5,9 +5,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/rightjoin/aero/conf"
-	"github.com/rightjoin/aero/db/cstr"
-	"github.com/rightjoin/aero/engine"
+	"github.com/nishrit/aero/conf"
+	"github.com/nishrit/aero/db/cstr"
+	"github.com/nishrit/aero/engine"
 )
 
 type Queue interface {

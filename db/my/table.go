@@ -5,7 +5,7 @@ import (
 	"reflect"
 	"strings"
 
-	"github.com/rightjoin/aero/str"
+	"github.com/nishrit/aero/str"
 )
 
 type table struct {

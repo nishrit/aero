@@ -7,7 +7,7 @@ import (
 	"time"
 
 	"github.com/mgutz/logxi/v1"
-	"github.com/rightjoin/aero/key"
+	"github.com/nishrit/aero/key"
 )
 
 type CacheLogger struct {
